@@ -76,7 +76,7 @@ body {
   flex-direction: column;
   padding: 30px 30px 50px 30px;
   border: 1px solid #ddd;
-  height: 260px;
+  /* height: 260px; */
   /* height: 80%; */
 }
 
@@ -94,6 +94,7 @@ body {
   display: flex;
   gap: 30px;
   color: #777;
+  height: 100%;
 }
 
 .main-card-img {
@@ -257,4 +258,23 @@ body {
 
 .submit-btn:hover {
   background-color: blue;
+}
+
+
+@media (max-width: 600px) {
+
+    .main-card-text p{
+       
+        overflow: hidden;
+      }
+
+    .portfolio {
+        gap: 50px;
+      }
+      
+      .portfolio-card {
+        flex-direction: column;
+        gap: 50px;
+        
+      }
 }
