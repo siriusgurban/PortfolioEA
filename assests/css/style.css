@@ -1,0 +1,163 @@
+@import url('reset.css');
+
+body {
+  background-image: url('/assests/images/concrete_seamless.png');
+}
+
+.header {
+  /* max-width: 1440px; */
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #ccc;
+  color: #fff;
+}
+
+.logo-link {
+  /* text-align: center; */
+  font-size: 30px;
+  width: 250px;
+  height: 100px;
+  border-radius: 5px;
+  background: #4aaaa5;
+  margin-left: 100px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  justify-content: flex-start;
+  margin: auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.nav-list-list {
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
+}
+
+.nav-list-list:first-child {
+  border-left: none;
+}
+
+.nav-list-list a {
+  text-decoration: none;
+  color: #777;
+}
+
+.section {
+  display: flex;
+  gap: 38px;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+ 
+}
+
+.main {
+  background-color: #fff;
+  display: flex;
+  gap: 20px;
+  max-width: 590px;
+  width: 100%;
+  flex-direction: column;
+  padding: 30px 30px 50px 30px;
+  border: 1px solid #ddd;
+  height: 260px;
+}
+
+.main-title {
+  font-size: 30px;
+  color: #4aaa;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 30px;
+}
+
+.main-card {
+  display: flex;
+  gap: 30px;
+  color: #777;
+}
+
+.main-card-img {
+  width: 200px;
+  height: 150px;
+}
+
+.main-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  max-width: 400px;
+  line-height: 18px;
+  /* letter-spacing: 0.5px; */
+}
+
+.contact-card {
+  background-color: #fff;
+  width: 222px;
+  height: 152px;
+  padding: 30px 30px 10px 30px;
+  border: 1px solid #ddd;
+}
+
+.contact-title {
+  font-size: 30px;
+  color: #4aaaa5;
+  font-weight: 700;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.contact-card-list {
+  margin-left: -40px;
+  display: flex;
+  gap: 1px;
+}
+
+.contact-card-list-list a img {
+  width: 62px;
+  height: 62px;
+}
+
+.contact-card-list-list a img:last-child {
+  width: 60px;
+  height: 60px;
+}
+
+.footer {
+  background-color: #666;
+  border-top: 8px solid #4aaaa5;
+  padding: 20px;
+  position:sticky;
+ 
+}
+
+.footer-title {
+  padding: 20px auto;
+  font-size: 12px;
+  color: #ccc;
+  padding-left: 27%;
+}
+
+
+/* -------------------------------------Portfolio----------------------------------------------------- */
+
+
