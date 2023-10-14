@@ -2,6 +2,7 @@
 
 body {
   background-image: url('/assests/images/concrete_seamless.png');
+  
 }
 
 .header {
@@ -64,7 +65,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   height: 100vh;
- 
 }
 
 .main {
@@ -77,6 +77,7 @@ body {
   padding: 30px 30px 50px 30px;
   border: 1px solid #ddd;
   height: 260px;
+  /* height: 80%; */
 }
 
 .main-title {
@@ -143,11 +144,12 @@ body {
 }
 
 .footer {
+  width: 100%;
   background-color: #666;
   border-top: 8px solid #4aaaa5;
   padding: 20px;
-  position:sticky;
- 
+  position: fixed;
+  bottom: 0;
 }
 
 .footer-title {
@@ -157,7 +159,102 @@ body {
   padding-left: 27%;
 }
 
-
 /* -------------------------------------Portfolio----------------------------------------------------- */
 
+.main-portfolio {
+  background-color: #fff;
+  display: flex;
+  gap: 20px;
+  max-width: 590px;
+  width: 100%;
+  flex-direction: column;
+  padding: 30px 30px 50px 30px;
+  border: 1px solid #ddd;
+  /* height: 260px; */
+  height: 550px;
+}
 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.portfolio-card {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.portfolio-card-img {
+  width: 274px;
+  height: 206px;
+  position: relative;
+}
+
+.portfolio-card-title {
+  color: #fff;
+  background-color: #4aaaa5;
+  padding: 20px;
+  font-size: 22px;
+  border-radius: 5px;
+
+  position: absolute;
+  top: 116px;
+  left: 8px;
+  width: 80%;
+
+  text-align: center;
+}
+
+.portfolio-card-title:hover {
+  background-color: blue;
+}
+
+/* -------------------------------------Contact----------------------------------------------------- */
+
+.main-contact {
+  background-color: #fff;
+  display: flex;
+  gap: 20px;
+  max-width: 590px;
+  width: 100%;
+  flex-direction: column;
+  padding: 30px 30px 50px 30px;
+  border: 1px solid #ddd;
+  /* height: 260px; */
+  height: 430px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 8px;
+  height: 600px;
+}
+
+.form-label {
+  padding-left: 5px;
+  color: #777;
+}
+
+.form-input {
+  padding: 5px;
+}
+
+.form-text {
+  padding: 5px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4aaaa5;
+  color: #eee;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background-color: blue;
+}
