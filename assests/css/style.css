@@ -2,7 +2,7 @@
 
 body {
   background-image: url('/assests/images/concrete_seamless.png');
-  
+
 }
 
 .header {
@@ -42,6 +42,7 @@ body {
 .nav-list {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 50px;
 }
 
@@ -64,7 +65,9 @@ body {
   gap: 38px;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100vh;
+  /* height: 100vh; */
+  /* height: ; */
+
 }
 
 .main {
@@ -78,6 +81,7 @@ body {
   border: 1px solid #ddd;
   /* height: 260px; */
   /* height: 80%; */
+
 }
 
 .main-title {
@@ -95,6 +99,7 @@ body {
   gap: 30px;
   color: #777;
   height: 100%;
+
 }
 
 .main-card-img {
@@ -118,6 +123,7 @@ body {
   height: 152px;
   padding: 30px 30px 10px 30px;
   border: 1px solid #ddd;
+  margin-bottom: 110px;
 }
 
 .contact-title {
@@ -173,6 +179,8 @@ body {
   border: 1px solid #ddd;
   /* height: 260px; */
   height: 550px;
+  margin-bottom: 110px;
+
 }
 
 .portfolio {
@@ -225,6 +233,7 @@ body {
   border: 1px solid #ddd;
   /* height: 260px; */
   height: 430px;
+  margin-bottom: 110px;
 }
 
 .form {
@@ -254,6 +263,7 @@ body {
   background-color: #4aaaa5;
   color: #eee;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .submit-btn:hover {
@@ -263,18 +273,44 @@ body {
 
 @media (max-width: 600px) {
 
-    .main-card-text p{
-       
-        overflow: hidden;
-      }
+  .nav-list {
+   
+    gap: 5px;
+    /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  }
+  
+.nav-list-list{
+  
+  border-bottom: 1px solid #ccc;
+  border-left: none;
+}
 
-    .portfolio {
-        gap: 50px;
-      }
-      
-      .portfolio-card {
-        flex-direction: column;
-        gap: 50px;
-        
-      }
+  .main-card-text p {
+    overflow: hidden;
+  }
+
+  .portfolio {
+    gap: 50px;
+  }
+
+  .portfolio-card {
+    flex-direction: column;
+    gap: 50px;
+
+  }
+
+  .main-portfolio {
+    margin-bottom: 50px;
+    height: 1100px;
+  }
+
+  .main-contact {
+    margin-bottom: 50px;
+  }
+
+  .main {
+    margin-bottom: 50px;
+  }
 }
